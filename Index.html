@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+      <title>Marvel Quiz</title>
+    <meta name="description" content="Quiz about Marvel Heroes">
+    <link href="index.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=BioRhyme" rel="stylesheet">
+  </head>
+  <body>
+    <main role="main">
+
+      <section role="region" id="js-starting-screen" class="row box">
+        <div class="col-12 title">
+          <h1>Are you a hero?</h1>
+            <img class="iron-man" src="https://www.quirkybyte.com/wp-content/uploads/2017/01/ironman-768x432.jpg" alt="picture of iron man">
+          <h5>Show me your courage, and click this button to take the quiz!</h5>
+          <button class="button" type="submit" id="start-button">Start Quiz</button>
+        </div>
+       </section>
+
+     <section role="region" id="js-quiz-page" class="row box">
+      <div class="col-12 question-page">
+        <h3><span class="question-title"></span></h3>
+        <h4 class="error-message"></h4>
+        <form id="quiz-page-form"></form>
+        <div class="submit">
+          <button class="button" type="submit" id="submit-button">Submit</button>
+        </div>
+        <div id="score-counter"></div>
+      </div>
+     </section>
+
+     <section role="region" id="js-feedback-correct" class="row box">
+       <div class="col-12 feedback-page">
+         <img class="thor" src="https://pmcdeadline2.files.wordpress.com/2017/10/thor-ragnarok.jpg" alt="picture of thor">
+         <h4>Thor says you got: <span class="current-correct"></span> out of 10 correct, Another!</h4>
+       </div>
+       <div class="submit">
+          <button class="next-button" type="submit" id="next-button">Next Question</button>
+        </div>
+     </section>
+
+     <section role="region" id="js-feedback-incorrect" class="row box">
+       <div class="col-12 feedback-page">
+         <img class="hulk" src="https://typeset-beta.imgix.net/rehost%2F2016%2F9%2F13%2F310bde30-764a-45c7-a619-fcb99ca05b52.jpg" alt="picture of hulk">
+         <h4>Hulk says try again, the correct answer is: </h4><span class="number-correct"></span>
+         <div class="submit">
+          <button class="next-button" type="submit" id="next-button">Next Question</button>
+        </div>
+       </div>
+     </section>
+
+      <section role="region" id="js-results-page" class="row box">
+        <div class="col-12 results">
+          <h1>Marvel at your score!</h1>
+         <div id="final-correct"><br></div>
+         <img class="thanos" src="http://nerdreactor.com/wp-content/uploads/2017/07/avengers_infinity_war_d23_poster.jpg" alt="picture of thanos">
+         <p>Click here to play again.</p>
+         <button id="restart-quiz-button" type="submit" class="button">Try Again</button>
+        </div>
+      </section>
+
+    </main>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.min.js"
+      integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+      crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+  </body>
+</html>

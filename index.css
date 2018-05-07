@@ -96,3 +96,9 @@ h4 {
 .error-message {
   color: red;
 }
+
+fieldset {
+  border: 0;
+  padding: 0;
+}
+
